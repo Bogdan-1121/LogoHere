@@ -1,0 +1,132 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+body {
+  color: white;
+  font-size: 21px;
+  line-height: 19px;
+  font-family: "Roboto", sans-serif;
+  background-image: url(img/patt.png);
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: rgba(202, 219, 237, 0.5);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-list {
+  border-left: 1px solid #2c71b8;
+}
+
+.menu-list + .menu-list + .menu-list + .menu-list {
+  border-right: 1px solid #2c71b8;
+}
+
+.menu-item {
+  font-size: 21px;
+  text-align: center;
+  list-style: none;
+  width: 145px;
+  height: 50px;
+  line-height: 50px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.sub-item {
+  display: block;
+  width: 290px;
+  height: 40px;
+  font-size: 21px;
+  color: white;
+  background-color: #2c71b8;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.search {
+  display: inline-flex;
+  border: 1px solid #2c71b8;
+  padding-left: 20px;
+  width: 200px;
+}
+
+.search-term {
+  border: none;
+  width: 125px;
+  height: 40px;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  margin-right: 15px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.search-button {
+  border: none;
+  background-color: #2c71b8;
+  height: 30px;
+  width: 30px;
+  margin: 5px 5px 5px 5px;
+}
+
+.basket {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
+
+.basket-img {
+  padding: 11px 11px 11px 11px;
+}
+
+.menu-list:hover .menu-item {
+  background-color: #2c71b8;
+}
+
+.menu-list:hover .sub-menu {
+  display: block;
+  background-color: #2c71b8;
+}
+
+.sub-item:hover {
+  background-color: white;
+  color: #2c71b8;
+}
